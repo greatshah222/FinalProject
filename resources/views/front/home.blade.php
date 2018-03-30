@@ -32,7 +32,7 @@
                     </a>
 
 
-                    <a href="#">
+                    <a href="{{url('book')}}">
                         <img src="https://github.com/greatshah222/Software_development/blob/firstPhase/2.jpg?raw=true"/>
                     </a>
                 </div>
@@ -47,7 +47,7 @@
                     </a>
 
 
-                    <a href="#">
+                    <a href="{{url('book')}}">
 
                         <img src="https://github.com/greatshah222/Software_development/blob/firstPhase/9780134743356_l.jpg?raw=true"/>
                     </a>

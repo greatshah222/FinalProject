@@ -12,7 +12,7 @@
                         <img src="https://github.com/greatshah222/Software_development/blob/firstPhase/0142426040_original.jpg?raw=true"/>
                     </a>
                 </div>
-                <a href="shirt.html">
+                <a href="{{url('book')}}">
                     <h3>
                         Book
                     </h3>

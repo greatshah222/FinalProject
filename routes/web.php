@@ -15,7 +15,8 @@
 
 
 
-Route::get('/','HomeController@index');
-Route::get('/books','HomeController@books');
-Route::get('/aboutus','HomeController@aboutus');
-Route::get('/trending','HomeController@trending');
+Route::get('/','HomeController@index')->name('home');
+Route::get('/books','HomeController@books')->name('books');
+Route::get('/book','HomeController@book')->name('book');
+Route::get('/aboutus','HomeController@aboutus')->name('aboutus');
+Route::get('/trending','HomeController@trending')->name('trending');
