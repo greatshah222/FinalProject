@@ -16,3 +16,6 @@
 
 
 Route::get('/','HomeController@index');
+Route::get('/books','HomeController@books');
+Route::get('/aboutus','HomeController@aboutus');
+Route::get('/trending','HomeController@trending');
