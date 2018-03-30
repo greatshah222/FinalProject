@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>
-        Software development Project
+      @yield('title','Read Application')
     </title>
     <link rel="stylesheet" type="text/css"
           href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css">
@@ -15,8 +15,8 @@
           href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
-    <link rel="stylesheet" href="{{(asset('dist/css/foundation.css'))}}"/>
-    <link rel="stylesheet" href="{{(asset('dist/css/app.css"'))}}"/>
+    <link rel="stylesheet" href="{{asset('dist/css/foundation.css')}}"/>
+    <link rel="stylesheet" href="{{asset('dist/css/app.css')}}"/>
 
     <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
 
@@ -74,8 +74,8 @@
 </div>
 
 
-
 @yield('content')
+
 
     <!-- Footer -->
     <br>
@@ -102,8 +102,8 @@
         </div>
     </footer>
 
-    <script src="{{asset('dist/js/vendor/jquery.js'}}"></script>
-<script src="{{asset('dist/js/app.js'}}"></script>
+    <script src="{{asset('dist/js/vendor/jquery.js')}}"></script>
+<script src="{{asset('dist/js/app.js')}}"></script>
 
 
 </body>
