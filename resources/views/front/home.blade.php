@@ -12,7 +12,7 @@
             </strong>
         </h2>
         <br>
-        <a href="{{url('trending')}}"><button class="button large">Trending Now</button></a>
+        <a href="{{route('trending')}}"><button class="button large">Trending Now</button></a>
     </section>
     <br/>
     <div class="subheader text-center">
@@ -32,7 +32,7 @@
                     </a>
 
 
-                    <a href="{{url('book')}}">
+                    <a href="{{route('book')}}">
                         <img src="https://github.com/greatshah222/Software_development/blob/firstPhase/2.jpg?raw=true"/>
                     </a>
                 </div>
@@ -47,7 +47,7 @@
                     </a>
 
 
-                    <a href="{{url('book')}}">
+                    <a href="{{route('book')}}">
 
                         <img src="https://github.com/greatshah222/Software_development/blob/firstPhase/9780134743356_l.jpg?raw=true"/>
                     </a>

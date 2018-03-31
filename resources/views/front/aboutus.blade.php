@@ -202,7 +202,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="{{url('books')}}">Books</a></li>
+                <li><a href="{{route('books')}}">Books</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Documents</a></li>
                 <li><a href="#pricing">PRICING</a></li>

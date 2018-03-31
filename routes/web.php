@@ -15,8 +15,30 @@
 
 
 
-Route::get('/','HomeController@index')->name('home');
-Route::get('/books','HomeController@books')->name('books');
-Route::get('/book','HomeController@book')->name('book');
-Route::get('/aboutus','HomeController@aboutus')->name('aboutus');
-Route::get('/trending','HomeController@trending')->name('trending');
+Route::get('/','FrontController@index')->name('home');
+Route::get('/books','FrontController@books')->name('books');
+Route::get('/book','FrontController@book')->name('book');
+Route::get('/aboutus','FrontController@aboutus')->name('aboutus');
+Route::get('/trending','FrontController@trending')->name('trending');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['prefix' => 'admin','middleware'=>'auth'],function ()
+{
+    Route::get('/', function ()
+
+    {
+        return view('admin.index');
+
+
+    })->name('admin.index');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
