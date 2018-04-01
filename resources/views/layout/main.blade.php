@@ -26,7 +26,7 @@
 <div  class="top-bar">
     <div style="color:white" class="top-bar-left">
         <h4 class="brand-title">
-            <a href="{{route('home')}}">
+            <a href="{{ url('/') }}">
                 <i class="fa fa-home fa-lg" aria-hidden="true">
                 </i>
                 READ-LIBRARY
