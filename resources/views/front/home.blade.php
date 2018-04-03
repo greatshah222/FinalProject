@@ -32,7 +32,7 @@
                     </a>
 
 
-                    <a href="{{route('book')}}">
+                    <a href="{{url('book')}}">
                         <img src="https://github.com/greatshah222/Software_development/blob/firstPhase/2.jpg?raw=true"/>
                     </a>
                 </div>
@@ -47,7 +47,7 @@
                     </a>
 
 
-                    <a href="{{route('book')}}">
+                    <a href="{{url('book')}}">
 
                         <img src="https://github.com/greatshah222/Software_development/blob/firstPhase/9780134743356_l.jpg?raw=true"/>
                     </a>
@@ -106,16 +106,17 @@
                             <img src="https://github.com/greatshah222/Software_development/blob/firstPhase/img1a.jpg?raw=true"/>
                         </a>
                     </div>
-                    <a href="#">
+                    <a href="shirt.html">
                         <h3>
-                            Kickin with Kraken Tee
+                            Romance
                         </h3>
                     </a>
                     <h5>
-                        $19.99
-                    </h5>
+                        Oulu University Press                  </h5>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
+                        This is a book based on love story from Spain.
+
+
                     </p>
                 </div>
             </div>
@@ -129,16 +130,17 @@
                             <img src="https://github.com/greatshah222/Software_development/blob/firstPhase/imga.jpg?raw=true"/>
                         </a>
                     </div>
-                    <a href="#">
+                    <a href="shirt.html">
                         <h3>
-                            Kickin with Kraken Tee
+                            Romance
                         </h3>
                     </a>
                     <h5>
-                        $19.99
-                    </h5>
+                        Oulu University Press                  </h5>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
+                        This is a book based on love story from Spain.
+
+
                     </p>
                 </div>
             </div>
@@ -152,16 +154,17 @@
                             <img src="https://github.com/greatshah222/Software_development/blob/firstPhase/imgaa.jpg?raw=true"/>
                         </a>
                     </div>
-                    <a href="#">
+                    <a href="shirt.html">
                         <h3>
-                            Kickin with Kraken Tee
+                            Romance
                         </h3>
                     </a>
                     <h5>
-                        $19.99
-                    </h5>
+                        Oulu University Press                  </h5>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
+                        This is a book based on love story from Spain.
+
+
                     </p>
                 </div>
             </div>
@@ -175,16 +178,17 @@
                             <img src="https://github.com/greatshah222/Software_development/blob/firstPhase/p02vdpfn.jpg?raw=true"/>
                         </a>
                     </div>
-                    <a href="#">
+                    <a href="shirt.html">
                         <h3>
-                            Kickin with Kraken Tee
+                            Romance
                         </h3>
                     </a>
                     <h5>
-                        $19.99
-                    </h5>
+                        Oulu University Press                  </h5>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
+                        This is a book based on love story from Spain.
+
+
                     </p>
                 </div>
             </div>

@@ -20,7 +20,6 @@
 
     <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
 
-
 </head>
 <body>
 <div  class="top-bar">
@@ -84,19 +83,28 @@
         <div class="row full-width">
             <div class="small-12 medium-4 large-4 columns">
                 <i class="fi-laptop"></i>
-                <p>Coded with love by Webdevmatics for educational purpose only</p>
-            </div>
+                <h5>About us</h5>
+                <ul>
+                    <li><a href="#">Company Information</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Reviews</a></li>
+                </ul>            </div>
             <div class="small-12 medium-4 large-4 columns">
                 <i class="fi-html5"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit consequuntur at! Amet sed itaque nostrum, distinctio eveniet odio, id ipsam fuga quam minima cumque nobis veniam voluptates deserunt!</p>
-            </div>
+                <h5>Read Application</h5>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sign up</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>            </div>
 
-            <div class="small-6 medium-4 large-4 columns">
-                <h4>Follow Us</h4>
+            <div class="small-12 medium-4 large-4 columns">
+                <i class="fas fa-eye"></i>
+                <h5>Follow Us</h5>
                 <ul class="footer-links">
-                    <li><a href="https://github.com/webdevmatics">GitHub</a></li>
+                    <li><a href="https://github.com/greatshah222/FinalProject">GitHub</a></li>
                     <li><a href="#">Facebook</a></li>
-                    <li><a href="https://twitter.com/webdevmatics">Twitter</a></li>
+                    <li><a href="https://twitter.com/Bishals04777429">Twitter</a></li>
                     <ul>
             </div>
         </div>
@@ -104,6 +112,7 @@
 
     <script src="{{asset('dist/js/vendor/jquery.js')}}"></script>
 <script src="{{asset('dist/js/app.js')}}"></script>
+
 
 
 </body>
