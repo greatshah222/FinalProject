@@ -100,7 +100,7 @@
 
             <div class="small-12 medium-4 large-4 columns">
                 <i class="fas fa-eye"></i>
-                <h5>Follow Us</h5>
+                <h5>Follow  Us</h5>
                 <ul class="footer-links">
                     <li><a href="https://github.com/greatshah222/FinalProject">GitHub</a></li>
                     <li><a href="#">Facebook</a></li>
