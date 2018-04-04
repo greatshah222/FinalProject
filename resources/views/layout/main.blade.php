@@ -52,8 +52,8 @@
             <li><a href="{{url('aboutus')}}"></i> Services</a></li>
 
             <li>
-                <a href="#">
-                    CONTACT
+                <a href="{{ route('login') }}">
+                    Login/Signup
                 </a>
             </li>
 
@@ -84,7 +84,7 @@
             <div class="small-12 medium-4 large-4 columns">
                 <i class="fi-laptop"></i>
                 <h5>About us</h5>
-                <ul>
+                <ul class ="footer-links">
                     <li><a href="#">Company Information</a></li>
                     <li><a href="#">Contact us</a></li>
                     <li><a href="#">Reviews</a></li>
@@ -92,7 +92,7 @@
             <div class="small-12 medium-4 large-4 columns">
                 <i class="fi-html5"></i>
                 <h5>Read Application</h5>
-                <ul>
+                <ul class ="footer-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Sign up</a></li>
                     <li><a href="#">Login</a></li>

@@ -44,3 +44,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/login/custom',
+    [
+        'uses'=>'LoginController@login',
+        'as'=>'login.custom'
+
+
+    ]);
+
