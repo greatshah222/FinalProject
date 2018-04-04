@@ -21,7 +21,6 @@ Route::get('/book','FrontController@book')->name('book');
 Route::get('/aboutus','FrontController@aboutus')->name('aboutus');
 Route::get('/trending','FrontController@trending')->name('trending');
 Auth::routes();
-Route::get('/logout', 'Auth\LoginController@logout')->name('home');
 
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -38,17 +37,8 @@ Route::group(['prefix' => 'admin','middleware'=>'auth'],function ()
 });
 
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-Route::post('/login/custom',
-    [
-        'uses'=>'LoginController@login',
-        'as'=>'login.custom'
 
 
-    ]);
 
