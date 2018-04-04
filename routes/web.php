@@ -20,24 +20,23 @@ Route::get('/books','FrontController@books')->name('books');
 Route::get('/book','FrontController@book')->name('book');
 Route::get('/aboutus','FrontController@aboutus')->name('aboutus');
 Route::get('/trending','FrontController@trending')->name('trending');
+Route::get('/logout', 'Auth\LoginController@logout')->name('home');
+
 Auth::routes();
 
-
+Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
-
 Route::group(['prefix' => 'admin','middleware'=>'auth'],function ()
 {
     Route::get('/', function ()
-
     {
         return view('admin.index');
-
-
     })->name('admin.index');
 });
 
-Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+
+
+
 
 
 
