@@ -57,7 +57,7 @@
                     </i>
                     MY COLLECTION
                     <span class="alert badge">
-                                2
+                                4
                             </span>
                 </a>
             </li>
