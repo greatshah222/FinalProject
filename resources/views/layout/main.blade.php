@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>
-      @yield('title','Read Application')
+        @yield('title','Read Application')
     </title>
     <link rel="stylesheet" type="text/css"
           href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css">
@@ -44,16 +44,17 @@
                     News & Magazine
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    Audiobooks
-                </a>
-            </li>
+
             <li><a href="{{url('aboutus')}}"></i> Services</a></li>
 
             <li>
                 <a href="{{ route('login') }}">
-                    Login/Signup
+                    Login
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('register') }}">
+                    Register
                 </a>
             </li>
 
@@ -76,41 +77,41 @@
 @yield('content')
 
 
-    <!-- Footer -->
-    <br>
+<!-- Footer -->
+<br>
 
-    <footer class="footer">
-        <div class="row full-width">
-            <div class="small-12 medium-4 large-4 columns">
-                <i class="fi-laptop"></i>
-                <h5>About us</h5>
-                <ul class ="footer-links">
-                    <li><a href="#">Company Information</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Reviews</a></li>
-                </ul>            </div>
-            <div class="small-12 medium-4 large-4 columns">
-                <i class="fi-html5"></i>
-                <h5>Read Application</h5>
-                <ul class ="footer-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sign up</a></li>
-                    <li><a href="#">Login</a></li>
-                </ul>            </div>
+<footer class="footer">
+    <div class="row full-width">
+        <div class="small-12 medium-4 large-4 columns">
+            <i class="fi-laptop"></i>
+            <h5>About us</h5>
+            <ul class ="footer-links">
+                <li><a href="#">Company Information</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Reviews</a></li>
+            </ul>            </div>
+        <div class="small-12 medium-4 large-4 columns">
+            <i class="fi-html5"></i>
+            <h5>Read Application</h5>
+            <ul class ="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>            </div>
 
-            <div class="small-12 medium-4 large-4 columns">
-                <i class="fas fa-eye"></i>
-                <h5>Follow  Us</h5>
-                <ul class="footer-links">
-                    <li><a href="https://github.com/greatshah222/FinalProject">GitHub</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="https://twitter.com/Bishals04777429">Twitter</a></li>
-                    <ul>
-            </div>
+        <div class="small-12 medium-4 large-4 columns">
+            <i class="fas fa-eye"></i>
+            <h5>Follow  Us</h5>
+            <ul class="footer-links">
+                <li><a href="https://github.com/greatshah222/FinalProject">GitHub</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="https://twitter.com/Bishals04777429">Twitter</a></li>
+                <ul>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <script src="{{asset('dist/js/vendor/jquery.js')}}"></script>
+<script src="{{asset('dist/js/vendor/jquery.js')}}"></script>
 <script src="{{asset('dist/js/app.js')}}"></script>
 
 
