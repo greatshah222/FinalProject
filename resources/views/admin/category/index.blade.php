@@ -9,7 +9,7 @@
                 @forelse($categories as $category)
 
             <li>
-                <a href="#">{{$category->name}}</a>
+                <a href="{{route('category.show',$category->id)}}">{{$category->name}}</a>
             </li>
                 @empty
                 <li>No data</li>
@@ -49,5 +49,28 @@
         </div><!-- /.modal -->
     </div>
 
+    @if(!empty($products))
+    <section>
 
-    @endsection
+
+        <h3>Products</h3>
+
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Products</th>
+            </tr>
+            </thead>
+            <tbody>
+            @forelse($products as $product)
+                <tr><td>{{$product->name}}</td></tr>
+            @empty
+                <tr><td>no data</td></tr>
+            @endforelse
+
+            </tbody>
+        </table>
+        </section>
+    @endif
+
+@endsection

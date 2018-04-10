@@ -26,7 +26,7 @@
 
             <div class="form-group">
                 {{ Form::label('category_id', 'Categories') }}
-                {{ Form::select('category_id', [1=>'coding'], null, ['class' => 'form-control','placeholder'=>'Select Genre']) }}
+                {{ Form::select('category_id', $categories, null, ['class' => 'form-control','placeholder'=>'Select Genre']) }}
             </div>
 
             <div class="form-group">
