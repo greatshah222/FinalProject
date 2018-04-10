@@ -17,11 +17,16 @@
                 {{ Form::label('description', 'Description') }}
                 {{ Form::text('description', null, array('class' => 'form-control')) }}
             </div>
+            <div class="form-group">
+                {{ Form::label('publisher', 'Publisher') }}
+                {{ Form::text('publisher', null, array('class' => 'form-control')) }}
+            </div>
+
 
 
             <div class="form-group">
                 {{ Form::label('category_id', 'Categories') }}
-                {{ Form::select('category_id', [1=>'sci-fi'], null, ['class' => 'form-control','placeholder'=>'Select Genre']) }}
+                {{ Form::select('category_id', [1=>'coding'], null, ['class' => 'form-control','placeholder'=>'Select Genre']) }}
             </div>
 
             <div class="form-group">
