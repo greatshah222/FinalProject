@@ -1,35 +1,62 @@
 @extends('layout.main')
 
 @section('content')
+    <div class="row">
 
-    <h3>My Collection</h3>
-
-
-    <table class="table table-hover">
-        <thead>
-        <tr>
-            <th>Book Name</th>
+        <h3>My Collection</h3>
 
 
-
-        </tr>
-        </thead>
-        <tbody>
-        @foreach($cartItems as $cartItem)
+        <table class="table table-hover">
+            <thead>
             <tr>
-                <td>{{$cartItem->name}}</td>
+                <th>Book Name</th>
+                <th>Total Number Of book</th>
 
-
-
-
-
+                <th>Action</th>
 
 
 
             </tr>
-        @endforeach
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+            @foreach($cartItems as $cartItem)
+                <tr>
+                    <td>{{$cartItem->name}}</td>
+                    <td></td>
+                    <td>
+
+                        <form action="{{route('cart.destroy',$cartItem->rowId)}}"  method="POST">
+                            {{csrf_field()}}
+                            {{method_field('DELETE')}}
+                            <input class="button small alert" type="submit" value="Delete">
+                        </form>
+                    </td>
+
+
+
+
+
+
+
+
+
+
+                </tr>
+            @endforeach
+            <tr>
+
+                <td></td>
+
+
+                <td>{{Cart::count()}} Book(s)</td>
+                <td></td>
+
+            </tr>
+            </tbody>
+        </table>
+        <a href="#" class="button">Read Now</a>
+    </div>
+
 
 
 

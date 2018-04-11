@@ -69,6 +69,7 @@
                     MY COLLECTION
                     <span class="alert badge">
 
+{{Cart::count()}}
                             </span>
                 </a>
             </li>
