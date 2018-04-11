@@ -53,22 +53,22 @@
             <li><a href="{{url('aboutus')}}"></i> Services</a></li>
 
             @if (Route::has('login'))
-                    @auth
-                      <li>  <a href="{{ url('/home') }}">{{Auth::user()->name}}</a></li>
+                @auth
+                    <li>  <a href="{{ url('/home') }}">{{Auth::user()->name}}</a></li>
                     <li><a href="{{url('/logout')}}">Logout</a></li>
 
                 @else
-                        <li><a href="{{ route('login') }}">Login</a></li>
+                    <li><a href="{{ route('login') }}">Login</a></li>
                     <li><a href="{{ route('register') }}">Register</a></li>
-                    @endauth
+                @endauth
             @endif
             <li>
-                <a href="#">
+                <a href="{{route('cart.index')}}">
                     <i class="fa fa-shopping-cart fa-2x" aria-hidden="true">
                     </i>
                     MY COLLECTION
                     <span class="alert badge">
-                                4
+
                             </span>
                 </a>
             </li>
@@ -127,5 +127,3 @@
 
 </body>
 </html>
-
-

@@ -12,7 +12,7 @@
         <div class="small-3 columns">
             <div class="item-wrapper">
                 <div class="img-wrapper">
-                    <a class="button expanded add-to-cart">
+                    <a href="{{route('cart.edit',$book->id)}}" class="button expanded add-to-cart">
                         Read Later                </a>
                     <a href="#">
                         <img src="{{url('images',$book->image)}}"/>

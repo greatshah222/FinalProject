@@ -32,7 +32,7 @@
                     </a>
 
 
-                    <a href="{{url('book')}}">
+                    <a href="{{route('book')}}">
                         <img src="https://github.com/greatshah222/Software_development/blob/firstPhase/2.jpg?raw=true"/>
                     </a>
                 </div>
