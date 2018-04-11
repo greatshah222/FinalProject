@@ -29,6 +29,7 @@
                             {{csrf_field()}}
                             {{method_field('DELETE')}}
                             <input class="button small alert" type="submit" value="Delete">
+                            <input class="button small" type="submit" value="Read Now">
                         </form>
                     </td>
 
@@ -54,7 +55,6 @@
             </tr>
             </tbody>
         </table>
-        <a href="#" class="button">Read Now</a>
     </div>
 
 
