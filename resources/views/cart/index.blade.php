@@ -29,9 +29,11 @@
                             {{csrf_field()}}
                             {{method_field('DELETE')}}
                             <input class="button small alert" type="submit" value="Delete">
-                            <input class="button small" type="submit" value="Read Now">
                         </form>
+
                     </td>
+                    <td><a href="https://www.goodreads.com/reader/54279-anthology-complex?return_to=%2Febooks" class="button small">Read Now </a></td>
+
 
 
 

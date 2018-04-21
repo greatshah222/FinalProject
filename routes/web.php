@@ -29,7 +29,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/cart', 'CartController');
 
 
-Route::group(['prefix' => 'admin','middleware'=>'auth'],function ()
+Route::group(['prefix' => 'admin','middleware'=>['auth','admin']],function ()
 {
     Route::get('/', function ()
     {

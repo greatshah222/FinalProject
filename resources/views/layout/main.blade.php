@@ -40,40 +40,56 @@
     <div class="top-bar-right">
         <ol class="menu">
             <li>
+                @if(Auth::check() && Auth::user()->isAdmin())
+              <a href="{{url('/admin')}}">ADMIN PANEL</a>
+            @endif
+            </li>
+            <li>
                 <a href="{{url('books')}}">
-                    Books
+                   BOOKS
                 </a>
             </li>
             <li>
                 <a href="#">
-                    News & Magazine
+                   NEWS AND MAGAZINE
                 </a>
             </li>
 
-            <li><a href="{{url('aboutus')}}"></i> Services</a></li>
+            <li><a href="{{url('aboutus')}}"></i> SERVICES</a></li>
+
+
+
 
             @if (Route::has('login'))
                 @auth
                     <li>  <a href="{{ url('/home') }}">{{Auth::user()->name}}</a></li>
-                    <li><a href="{{url('/logout')}}">Logout</a></li>
+                    <li><a href="{{url('/logout')}}">LOGOUT</a></li>
+                    <li>
+                        <a href="{{route('cart.index')}}">
+                            <i class="fa fa-shopping-cart fa-2" aria-hidden="true">
+                            </i>
+                            MY COLLECTION
+                            <span class="badge badge-light">{{Cart::count()}}</span>
+
+                        </a>
+                    </li>
+
+
+
 
                 @else
-                    <li><a href="{{ route('login') }}">Login</a></li>
-                    <li><a href="{{ route('register') }}">Register</a></li>
+                    <li><a href="{{ route('login') }}">LOGIN</a></li>
+                    <li><a href="{{ route('register') }}">REGISTER</a></li>
+                    <li>
+                        <a href="{{route('cart.index')}}">
+
+
+                            <span></span>
+                        </a>
+                    </li>
+
                 @endauth
             @endif
-            <li>
-                <a href="{{route('cart.index')}}">
-                    <i class="fa fa-shopping-cart fa-2x" aria-hidden="true">
-                    </i>
-                    MY COLLECTION
-                    <span class="alert badge">
-
-{{Cart::count()}}
-                            </span>
-                </a>
-            </li>
-
 
 
 
